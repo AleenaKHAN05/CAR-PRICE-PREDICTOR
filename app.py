@@ -28,7 +28,7 @@ seller_type = st.selectbox("Seller Type", ['Dealer', 'Individual', 'Trustmark De
 if st.button("Predict Price"):
     try:
         # Feature engineering
-        car_age = 2025 - year
+        
         mileage_per_engine = mileage / engine
 
         # Target encoding
@@ -55,7 +55,7 @@ if st.button("Predict Price"):
             'mileage': mileage,
             'engine': engine,
             'max_power': max_power,
-            'car_age': car_age,
+            
             'mileage_per_engine': mileage_per_engine,
             'Diesel': fuel_dict['Diesel'],
             'Petrol': fuel_dict['Petrol'],
